@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">DummyPay</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">New here? Sign Up to get started!</string>
+    <string name="hello">Hello!</string>
+    <string name="cancel">Cancel</string>
+    <string name="signUp">Register</string>
+    <string name="name">Name</string>
+    <string name="dob">Date of Birth</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="others">Others</string>
+    <string name="gend">Gender</string>
+    <string name="uid">12 digit UID Number</string>
+    <string name="defUser">Welcome %1$s!</string>
+    <string name="balanceHead">Wallet Balance</string>
+    <string name="logout">Logout</string>
+    <string name="currBal">₹%1$.2f</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

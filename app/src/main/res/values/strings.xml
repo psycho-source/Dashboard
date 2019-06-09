@@ -18,7 +18,20 @@
     <string name="balanceHead">Wallet Balance</string>
     <string name="logout">Logout</string>
     <string name="currBal">₹%1$.2f</string>
+    <string name="settings">Settings</string>
+    <string name="currAccent">Accent Color</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="accent">
+        <item>Cyan</item>
+        <item>Blue</item>
+        <item>Indigo</item>
+        <item>Purple</item>
+        <item>Red</item>
+        <item>Pink</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+        <item>Teal</item>
+        <item>Green</item>
+        <item>Grey</item>
+    </string-array>
 </resources>

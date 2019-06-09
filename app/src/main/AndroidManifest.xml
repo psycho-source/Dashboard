@@ -18,7 +18,10 @@
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning"
             >
-        <activity android:name=".Settings">
+        <activity
+                android:name=".Settings"
+                android:theme="@style/SettingsTheme"
+                >
         </activity>
         <activity
                 android:name=".Dashboard"

@@ -3,4 +3,8 @@
     <color name="colorPrimary">#ffffff</color>
     <color name="colorPrimaryDark">#fafafa</color>
     <color name="colorAccent">#2196F3</color>
+    <color name="colorDarkPrimary">#303030</color>
+    <color name="colorDarkPrimaryDark">#303030</color>
+    <color name="customCard">#FAFAFA</color>
+    <color name="customCardDark">#5C5C5C</color>
 </resources>

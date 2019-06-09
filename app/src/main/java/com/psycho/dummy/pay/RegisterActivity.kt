@@ -1,6 +1,7 @@
 package com.psycho.dummy.pay
 
 import android.app.DatePickerDialog
+import android.content.Context
 import android.icu.util.Calendar
 import android.os.Bundle
 import android.support.design.button.MaterialButton
@@ -41,6 +42,52 @@ class RegisterActivity : AppCompatActivity() {
     var selGender = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        val sharedPreferences = this.getSharedPreferences("appPref", Context.MODE_PRIVATE)
+        val isDark = sharedPreferences.getBoolean("darkMode", false)
+        if (isDark) {
+            setTheme(R.style.AppThemeDark)
+        } else {
+            setTheme(R.style.AppTheme)
+        }
+        val accent = sharedPreferences.getInt("accent", 1)
+        when (accent) {
+            0 -> {
+                theme.applyStyle(R.style.OverlayCyan, true)
+            }
+            1 -> {
+                theme.applyStyle(R.style.OverlayBlue, true)
+            }
+            2 -> {
+                theme.applyStyle(R.style.OverlayIndigo, true)
+            }
+            3 -> {
+                theme.applyStyle(R.style.OverlayPurple, true)
+            }
+            4 -> {
+                theme.applyStyle(R.style.OverlayRed, true)
+            }
+            5 -> {
+                theme.applyStyle(R.style.OverlayPink, true)
+            }
+            6 -> {
+                theme.applyStyle(R.style.OverlayOrange, true)
+            }
+            7 -> {
+                theme.applyStyle(R.style.OverlayYellow, true)
+            }
+            8 -> {
+                theme.applyStyle(R.style.OverlayTeal, true)
+            }
+            9 -> {
+                theme.applyStyle(R.style.OverlayGreen, true)
+            }
+            10 -> {
+                theme.applyStyle(R.style.OverlayGrey, true)
+            }
+            else -> {
+                theme.applyStyle(R.style.OverlayBlue, true)
+            }
+        }
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
@@ -150,7 +197,7 @@ class RegisterActivity : AppCompatActivity() {
 
     fun register() {
         val queue = Volley.newRequestQueue(this)
-        val url = " " //TODO: Your URL to registeration page
+        val url = "" //TODO: Your URL to registeration page
         val stringRequest = object : StringRequest(Method.POST, url, Response.Listener { response ->
             when (response) {
                 "1" -> {
